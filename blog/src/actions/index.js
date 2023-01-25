@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import _ from "lodash";
 import jsonPlaceholder from "../apis/jsonPlaceholder";
 
@@ -23,16 +22,3 @@ const _fetchUser = _.memoize( async(id, dispatch)=>{
     payload: response.data,
   });
 });
-=======
-import jsonPlaceholder from "../apis/jsonPlaceholder";
-
-export const fetchPosts = () =>  async dispatch => {
-    const response = await jsonPlaceholder.get("/posts");
-
-    dispatch ({
-        type: "FETCH_POSTS",
-        payload: response.data
-    })
-  };
-
->>>>>>> 8db1ee14126cd284ca3a48deafc9cceb2e4c00f3
